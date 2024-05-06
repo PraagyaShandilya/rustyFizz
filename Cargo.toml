@@ -7,4 +7,5 @@ edition = "2021"
 
 [dependencies]
 fast_inv_sqrt = "1.0.1"
+once_cell = "1.19.0"
 raylib = "3.7.0"

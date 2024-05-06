@@ -48,6 +48,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ae743338b92ff9146ce83992f766a31066a91a8c84a45e0e9f21e7cf6de6d346"
 
 [[package]]
+name = "once_cell"
+version = "1.19.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3fdb12b2476b595f9358c5161aa467c2438859caa136dec86c26fdd2efe17b92"
+
+[[package]]
 name = "raylib"
 version = "3.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -75,5 +81,6 @@ name = "rustyFizz"
 version = "0.1.0"
 dependencies = [
  "fast_inv_sqrt",
+ "once_cell",
  "raylib",
 ]

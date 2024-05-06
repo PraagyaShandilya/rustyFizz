@@ -9,12 +9,12 @@ pub mod cvec{
     use fast_inv_sqrt::InvSqrt32;
 
     #[derive(Debug,Clone,Copy)]
-    pub struct cartvec{
-        x: f32,
-        y: f32,
-        z: f32,
+    pub struct Cartvec{
+        pub(crate) x: f32,
+        pub(crate) y: f32,
+        pub(crate) z: f32,
     }
-    impl PartialEq for cartvec {
+    impl PartialEq for Cartvec {
         fn eq(&self, other: &Self) -> bool {
             return (self.x == other.x) 
                     &&
@@ -24,25 +24,29 @@ pub mod cvec{
         }
     }
 
-    impl cartvec {
-        pub fn newcart(x:f32,y:f32,z:f32) -> cartvec {
-            let cartvec = cartvec{
+    impl Cartvec {
+        pub fn newcart(x:f32,y:f32,z:f32) -> Cartvec {
+            let cartvec = Cartvec{
                 x:(x),y:(y),z:(z),
             };
             return cartvec
         }
 
-        pub fn initcart() ->cartvec {
-            let cartvec = cartvec::newcart(0.0,0.0,0.0);
+        pub fn deconstruct(self) -> (f32,f32,f32) {
+            (self.x,self.y,self.z)
+        }
+
+        pub fn initcart() ->Cartvec {
+            let cartvec = Cartvec::newcart(0.0,0.0,0.0);
             return cartvec
         }
 
-        pub fn is_zero_vec(vec: &cartvec) -> bool {
+        pub fn is_zero_vec(vec: &Cartvec) -> bool {
             vec.eq(&Self::initcart())
         }
 
-        pub fn invert(self) -> cartvec{
-            return cartvec{
+        pub fn invert(self) -> Cartvec{
+            return Cartvec{
             x:(-self.x),y:(-self.y),z:(-self.z),
             }
         }
@@ -76,50 +80,50 @@ pub mod cvec{
             self.y*=scale;
             self.z*=scale;
         }
-        pub fn vector_add(vec1:cartvec,vec2:cartvec) -> cartvec{
-            return cartvec{
+        pub fn vector_add(vec1:Cartvec,vec2:Cartvec) -> Cartvec{
+            return Cartvec{
                 x:(vec1.x+vec2.x),
                 y:(vec1.y+vec2.y),
                 z:(vec1.z+vec2.z)
             }
         }
 
-        pub fn vector_sub(vec1:cartvec,vec2:cartvec) -> cartvec{
-            return cartvec{
+        pub fn vector_sub(vec1:Cartvec,vec2:Cartvec) -> Cartvec{
+            return Cartvec{
                 x:(vec1.x-vec2.x),
                 y:(vec1.y-vec2.y),
                 z:(vec1.z-vec2.z)
             }
         }
 
-        pub fn vector_scaled_add(vec1:cartvec,vec2:cartvec,scale:f32) -> cartvec{
-            return cartvec{
+        pub fn vector_scaled_add(vec1:Cartvec,vec2:Cartvec,scale:f32) -> Cartvec{
+            return Cartvec{
                 x:(vec1.x+scale*vec2.x),
                 y:(vec1.y+scale*vec2.y),
                 z:(vec1.z+scale*vec2.z)
             }
         }
 
-        pub fn vector_component_mult(vec1:cartvec,vec2:cartvec) -> cartvec {
-            return cartvec { x: (vec1.x*vec2.x), 
+        pub fn vector_component_mult(vec1:Cartvec,vec2:Cartvec) -> Cartvec {
+            return Cartvec { x: (vec1.x*vec2.x), 
                              y: (vec1.y*vec2.y), 
                              z: (vec1.z*vec2.z) 
                            }   
         }
         //vector multiplication
         
-        pub fn dot_product(vec1:cartvec,vec2:cartvec) -> f32 {
+        pub fn dot_product(vec1:Cartvec,vec2:Cartvec) -> f32 {
             return vec1.x+vec2.x+vec1.y+vec2.y+vec1.z+vec2.z;
         }
 
-        pub fn cross_product(vec1:cartvec,vec2:cartvec) -> cartvec {
-            return cartvec{ x:(vec1.y*vec2.z-vec1.z*vec2.y), 
+        pub fn cross_product(vec1:Cartvec,vec2:Cartvec) -> Cartvec {
+            return Cartvec{ x:(vec1.y*vec2.z-vec1.z*vec2.y), 
                             y:(vec1.z*vec2.x-vec2.x*vec2.z), 
                             z:(vec2.x*vec2.y-vec1.y*vec2.x)
                  }
         }   
         //calculate angle between two vectors usign the dot_product()
-        pub fn theta(mut veca:cartvec,mut vecb:cartvec) -> f32{
+        pub fn theta(mut veca:Cartvec,mut vecb:Cartvec) -> f32{
             veca.normalise();
             vecb.normalise();
             let res:f32 =Self::dot_product(

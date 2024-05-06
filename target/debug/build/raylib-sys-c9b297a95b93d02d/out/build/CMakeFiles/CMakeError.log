@@ -1,0 +1,58 @@
+Performing C SOURCE FILE Test COMPILER_HAS_THOSE_TOGGLES failed with the following output:
+Change Dir: C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/build/CMakeFiles/CMakeScratch/TryCompile-p7hzrd
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_53422.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.0+18d5aef85 for .NET Framework
+cl : command line  error D8021: invalid numeric argument '/Werror=pointer-arith' [C:\Users\Praag\Documents\Programming\Rust\rustyFizz\target\debug\build\raylib-sys-c9b297a95b93d02d\out\build\CMakeFiles\CMakeScratch\TryCompile-p7hzrd\cmTC_53422.vcxproj]
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/build/CMakeFiles/CMakeScratch/TryCompile-e49mbm
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_cba1a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.0+18d5aef85 for .NET Framework
+  src.c
+C:\Users\Praag\Documents\Programming\Rust\rustyFizz\target\debug\build\raylib-sys-c9b297a95b93d02d\out\build\CMakeFiles\CMakeScratch\TryCompile-e49mbm\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\Users\Praag\Documents\Programming\Rust\rustyFizz\target\debug\build\raylib-sys-c9b297a95b93d02d\out\build\CMakeFiles\CMakeScratch\TryCompile-e49mbm\cmTC_cba1a.vcxproj]
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/build/CMakeFiles/CMakeScratch/TryCompile-ahlbn2
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_4c288.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.0+18d5aef85 for .NET Framework
+  CheckFunctionExists.c
+LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\Users\Praag\Documents\Programming\Rust\rustyFizz\target\debug\build\raylib-sys-c9b297a95b93d02d\out\build\CMakeFiles\CMakeScratch\TryCompile-ahlbn2\cmTC_4c288.vcxproj]
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/build/CMakeFiles/CMakeScratch/TryCompile-7q3rse
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e4f19.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.0+18d5aef85 for .NET Framework
+  CheckFunctionExists.c
+LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\Users\Praag\Documents\Programming\Rust\rustyFizz\target\debug\build\raylib-sys-c9b297a95b93d02d\out\build\CMakeFiles\CMakeScratch\TryCompile-7q3rse\cmTC_e4f19.vcxproj]
+
+
+

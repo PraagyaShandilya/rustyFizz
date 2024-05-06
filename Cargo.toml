@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 fast_inv_sqrt = "1.0.1"
+raylib = "3.7.0"

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Praag\Documents\Programming\Rust\rustyFizz\target\debug\build\raylib-sys-c9b297a95b93d02d\out\build\CMakeFiles\c4a3b051775759c6b26e589c350c9492\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A24F947A-D5F1-3FA3-9344-0302E40A49C0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

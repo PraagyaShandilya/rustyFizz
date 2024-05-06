@@ -1,0 +1,10 @@
+^C:\USERS\PRAAG\DOCUMENTS\PROGRAMMING\RUST\RUSTYFIZZ\TARGET\DEBUG\BUILD\RAYLIB-SYS-C9B297A95B93D02D\OUT\RAYLIB\SRC\EXTERNAL\GLFW\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/raylib -BC:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/build --check-stamp-file C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/build/raylib/external/glfw/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

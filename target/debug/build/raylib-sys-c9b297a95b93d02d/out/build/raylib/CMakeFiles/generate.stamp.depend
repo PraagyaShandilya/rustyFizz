@@ -1,0 +1,16 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.25/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.25/Templates/CPackConfig.cmake.in
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/raylib/cmake/CompileDefinitions.cmake
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/raylib/cmake/GlfwImport.cmake
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/raylib/cmake/InstallConfigurations.cmake
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/raylib/cmake/JoinPaths.cmake
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/raylib/cmake/LibraryConfigurations.cmake
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/raylib/cmake/LibraryPathToLinkerFlags.cmake
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/raylib/cmake/PackConfigurations.cmake
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/raylib/cmake/PopulateConfigVariablesLocally.cmake
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/raylib/cmake/raylib-config-version.cmake
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/raylib/raylib.pc.in
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/raylib/src/CMakeLists.txt

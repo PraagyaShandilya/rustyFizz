@@ -1,0 +1,9 @@
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/lib/raylib.lib
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/include/raylib.h
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/include/rlgl.h
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/include/physac.h
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/include/raymath.h
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/include/raudio.h
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/lib/pkgconfig/raylib.pc
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/lib/cmake/raylib/raylib-config-version.cmake
+C:/Users/Praag/Documents/Programming/Rust/rustyFizz/target/debug/build/raylib-sys-c9b297a95b93d02d/out/lib/cmake/raylib/raylib-config.cmake
